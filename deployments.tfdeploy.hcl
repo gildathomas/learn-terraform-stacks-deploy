@@ -7,7 +7,7 @@ identity_token "aws" {
 
 deployment "development" {
   inputs = {
-    regions        = ["us-east-1"]
+    regions        = ["eu-north-1"]
     role_arn       = "arn:aws:iam::368409608422:role/stack-role"
     identity_token = identity_token.aws.jwt
     default_tags   = { stacks-preview-example = "lambda-component-expansion-stack" }
